@@ -1,5 +1,5 @@
-## Tanooki Kills Superfish - SuperfishMEMZ
+## GAMENAME
 
-<iframe src="https://sfmemz.github.io/tanooki-kills-superfish/game.html" width="480" height="320">
+<iframe src="https://sfmemz.github.io/GAMENAME/" width="480" height="320">
 
 <a href="/index.html">More Games</a>
