@@ -1,6 +1,6 @@
-## SuperfishMEMZ - Angry Birds, Angry Birds games, Play Angry Birds Online
+## SuperfishMEMZ's Website
 
-Welcome to my website! Here, you can play numerous online games without ANY download!
+This is some game hosting page that hosts online games I forked from Github or other pages. Feel free to send me a copyright claim to remove a game. 
 
 ### Games
 [AngryBirdsRadox](AngryBirdsRadox.html)
