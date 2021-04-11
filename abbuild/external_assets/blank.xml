@@ -1,0 +1,46 @@
+<quest name="Quest Title">
+  <!-- Quest content from editor goes here -->
+  <level>{"world":{"bird_1":{"x":-5.199999999999999,"id":"BIRD_REDBIG","y":-1.85},"bird_2":{"x":-10.2,"id":"BIRD_REDBIG","y":-1.85},"bird_4":{"x":-20.2,"id":"BIRD_REDBIG","y":-1.85},"block_1":{"x":50.95,"angle":0,"id":"PIG_BASIC_MEDIUM","y":-6.95,"uniqueID":"","front":false},"bird_3":{"x":-15.2,"id":"BIRD_REDBIG","y":-1.85}},"counts":{"birds":4,"blocks":1,"joints":0},"name":null,"slingshotY":-8,"LevelExtension":0,"scoreGold":28176,"slingshotX":0,"scoreEagle":0,"scoreSilver":12600,"camera":[{"left":-24.2,"scale":0.5322687957418496,"id":"SLINGSHOT","y":-15,"right":50.95,"x":13.375000000000002,"bottom":10,"top":-40},{"left":38.95,"scale":0.6,"id":"CASTLE","y":-15,"right":62.95,"x":50.95,"bottom":10,"top":-40}],"theme":"BACKGROUND_BLUE_GRASS"}</level>
+  <!-- Intro effect applied to the preset structure -->
+  <!-- Available types: Impulse, ... -->
+  <intro type="None">
+    <start>5</start>
+    <end>1000</end>
+  </intro>
+  <!-- Quest steps, using functions that check object states in the canvas -->
+  <!-- Available types: GhostObject, Connected, ... -->
+  <step type="GhostObject">
+    <description>Step 1 description</description>
+    <object instruction="true">1</object>
+  </step>
+  <step type="Connected">
+    <description>Step 2 description</description>
+    <object>1</object>
+    <object>ground</object>
+  </step>
+  <surprise>
+    <x>54.95</x>
+    <y>-4.95</y>
+    <reward>MISC_FOOD_DONUT</reward>
+  </surprise>
+  <surprise>
+    <x>71.95</x>
+    <y>-18.95</y>
+    <reward>MISC_FOOD_DONUT</reward>
+  </surprise>
+  <!-- Quest-based UI controls, modifying the visibility of UI elements -->
+  <!-- Available states: unknown, hidden, ... -->
+  <inventory>
+    <category state="hidden">Objects</category>
+    <category state="hidden">Pigs</category>
+    <category state="hidden">Birds</category>
+    <category state="hidden">Rock</category>
+    <category state="hidden">Ice</category>
+    <category state="hidden">Static</category>
+    <category state="hidden">Snow</category>
+  </inventory>
+  <availableItems count="10">
+    <item>WOOD_BLOCK_4X1</item>
+    <item>WOOD_BLOCK_8X1</item>
+  </availableItems>
+</quest>
