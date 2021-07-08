@@ -1,0 +1,71 @@
+<config>
+	
+    <!-- SERVICES -->
+    <!-- Enable, disable, and configure services here -->
+    
+	<services>
+		<service type="analytics" enabled="false" id="7006035142339998430" />
+	</services>
+	
+	<!-- LOCALIZATION -->
+	      
+    <localization>
+    	<region>en</region>
+    </localization>
+    	
+	<!-- PACK DEFINITIONS -->
+	<!-- Define packs, flump folders, and tilesheets to be loaded later -->
+	      
+    <packs>
+    	<!-- EX
+    	<pack id="pack_folder1"/>
+    	<pack id="pack_folder2">
+      		<flump id="flump_folder"/>
+      		<tiles id="folder/tilesheet_id"/>
+  		</pack>
+    	-->
+    	
+    	<pack id="initial_load"/>
+   		<pack id="gameplay_universal">
+      		<flump id="anim_tiles"/>
+      		<flump id="anim_player"/>
+      		<flump id="anim_jellyfish"/>
+      		<flump id="anim_bubble"/>
+      		<flump id="anim_geyser"/>
+      		<flump id="anim_hd_spongebob"/>
+      		<flump id="anim_hd_cosmo"/>
+      		<flump id="anim_hd_mikey"/>
+      		<flump id="anim_hd_patrick"/>
+      		<flump id="anim_hd_sanjay"/>
+      		<flump id="anim_hd_spongebob_2"/>
+      		<flump id="anim_hd_donnie"/>
+      		<flump id="anim_hd_po"/>
+      		<flump id="anim_hd_raph"/>
+   		</pack>
+		
+   		<!-- END OF PACKS -->
+    </packs>
+    
+    <!-- CHUNKS -->
+    <!-- Define larger bundles of chunks and packs to load -->
+    
+    <chunks>
+    	<!-- EX
+    	<chunk id="chunk">
+			<chunk>load_part_1</chunk>
+			<pack>load_part_2</chunk>
+		</chunk>
+    	-->
+    
+    	<chunk id="initial">
+    		<pack>initial_load</pack>    		
+    	</chunk>
+    	
+    	<chunk id="gameplay">
+    		<pack>gameplay_universal</pack>
+    	</chunk>
+
+        <!-- END OF CHUNKS -->
+    </chunks>
+    
+</config>
